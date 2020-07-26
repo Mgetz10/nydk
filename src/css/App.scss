@@ -1,0 +1,50 @@
+@import "resets";
+
+.App {
+  width: 100vw;
+  height: 100vh;
+  background: black;
+
+  .names {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 3% 2.1%;
+    overflow-x: hidden;
+
+    /*
+  
+    ⬇︎ no scrollbar ⬇︎
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    */
+
+    .name {
+      text-transform: uppercase;
+      color: white;
+      margin: 0 1.1%;
+      white-space: nowrap;
+      font-family: inherit;
+      font-size: 1.8rem;
+      font-weight: 800;
+      transition: transform 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        transform: scale(1.1);
+
+        &::after {
+          content: "";
+        }
+      }
+    }
+  }
+
+}
