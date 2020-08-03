@@ -24,15 +24,15 @@ p {
   padding: 3% 2.1%;
   overflow-x: hidden;
   /*
-  
+    
     ⬇︎ no scrollbar ⬇︎
-
+    
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }
-
+    
     */
 }
 
@@ -58,5 +58,13 @@ p {
 
 .App .names .name:hover::after {
   content: "";
+}
+
+.App .search {
+  background: black;
+}
+
+.App .search .name {
+  color: white;
 }
 /*# sourceMappingURL=App.css.map */

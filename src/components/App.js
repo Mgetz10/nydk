@@ -8,7 +8,7 @@ class App extends React.Component {
   state = {
     profiles: {}
   };
-
+  categories;
   componentDidMount() {
     fetch(
       'https://spreadsheets.google.com/feeds/cells/1UrZT2ECoh93_zULpxcDjGPFGDkVXr1fj7qZzE7okZg4/1/public/full?alt=json'
@@ -44,6 +44,9 @@ class App extends React.Component {
           return obj;
         }, {});
 
+        const categories = Object.keys(infoCategories);
+        this.categories = categories;
+
         this.setState({
           profiles
         });
@@ -70,7 +73,12 @@ class App extends React.Component {
             />
             <Route
               path="/search"
-              render={() => <Search profiles={this.state.profiles}></Search>}
+              render={() => (
+                <Search
+                  profiles={this.state.profiles}
+                  categories={this.categories}
+                ></Search>
+              )}
             />
           </Switch>
         </BrowserRouter>

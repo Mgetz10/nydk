@@ -15,15 +15,15 @@
     overflow-x: hidden;
 
     /*
-  
+    
     ⬇︎ no scrollbar ⬇︎
-
+    
     -ms-overflow-style: none;
     scrollbar-width: none;
     &::-webkit-scrollbar {
       display: none;
     }
-
+    
     */
 
     .name {
@@ -44,6 +44,14 @@
           content: "";
         }
       }
+    }
+  }
+
+  .search {
+    background: black;
+
+    .name {
+      color: white;
     }
   }
 
