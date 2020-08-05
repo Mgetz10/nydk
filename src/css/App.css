@@ -66,5 +66,10 @@ p {
 
 .App .search .name {
   color: white;
+  text-transform: uppercase;
+}
+
+.App .search .active {
+  background: green;
 }
 /*# sourceMappingURL=App.css.map */

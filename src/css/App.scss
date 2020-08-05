@@ -52,6 +52,11 @@
 
     .name {
       color: white;
+      text-transform: uppercase;
+    }
+
+    .active {
+      background: green;
     }
   }
 
